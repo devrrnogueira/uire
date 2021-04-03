@@ -12,7 +12,6 @@ export function UITabs({
     tab,
     iconAlign='top',
     align='center', // {center|justify} se as abas ficarão justificadas ou centralizadas
-    position="top", // {top|bottom}
     onChange,
     ...rest
 }) {
@@ -20,21 +19,14 @@ export function UITabs({
     let indicatorEl = useRef()
     let cls = `hbox ui-tabs ui-tabs-align-${align} ${className}`
     
-    const [previousTab, setPreviousTab] = useState(tab)
     const arr = Array.isArray(children) ? children : [children]
     
     useLayoutEffect(()=>{
-        // let enter = previousTab < tab ? 'toright' : 'toleft'
-        // let exit = previousTab > tab ? 'toleft' : 'toright'
-        // let indicator = indicatorEl.current
-
         function onResize() {
             indicatorRender()
         }
 
         ResizeObserver.observe(onResize)
-
-        setPreviousTab(tab)
 
         indicatorRender()
 

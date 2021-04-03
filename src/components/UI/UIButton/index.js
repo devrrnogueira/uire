@@ -3,26 +3,31 @@ import UISVGIcon from '../UISvgIcon'
 import './UIButton.css'
 
 export default function UIButton({
-    innerRef={},
     children,
-    shadow=false,
+    style,
+    className='',
+
+    color="",
+    caption="",
     fill=false,
+    innerRef={},
+    icon=null,
+    iconAlign="left",
     outline=false,
     raised=false,
     rounded=false,
-    color="",
-    caption="",
-    icon=null,
-    iconAlign="left",
     type='button',
-    style,
-    className='',
+    
     ...rest
 }) {
 
     let cls
     let ref = useRef()
-    
+
+    if (!children && !caption) {
+        iconAlign = 'none'
+    }
+
     useLayoutEffect(()=>{
         innerRef.current = ref.current
     }, [innerRef])
@@ -44,12 +49,12 @@ export default function UIButton({
     }
 
     cls = `button col` + 
-        (icon ? ` button-icon-align-${iconAlign}` : '') +
-        (raised ? ' button-raised' : '') +
+        (icon    ? ` button-icon-align-${iconAlign}` : '') +
+        (raised  ? ' button-raised' : '') +
         (outline ? ' button-outline' : '') +
         (rounded ? ' button-round' : '') +
-        (fill ? ' button-fill' : '') +
-        (color ? ` color-${color}` : '') +
+        (fill    ? ' button-fill' : '') +
+        (color   ? ` color-${color}` : '') +
         (iconAlign == 'top' ? ' button-icon-align-top' : '')
         
     return (
@@ -58,7 +63,6 @@ export default function UIButton({
             type={type}
             className={`${cls} ${className}`}
             style={style}
-            // shadow={rounded || shadow ? '' : null}
             {...rest}
         >
             {icon && <i className="button-icon"><UISVGIcon href={icon} /></i>}

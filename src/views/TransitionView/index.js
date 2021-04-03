@@ -62,26 +62,18 @@ const animations = [
 export default function TransitionView() {
     const el1 = useRef()
     const [animation, setAnimation] = useState(0)
-    const [disabled, setDisabled] = useState(false)
     
     useLayoutEffect(()=>{
         run()
+    // eslint-disable-next-line
     }, [animation])
 
     function run(){
         let anim = animations[animation].state
 
-        setDisabled(true)
-
         csstransition(el1.current)
             .run(anim,(canceled)=>{
                 console.log('complete', canceled)
-                return new Promise((resolve) => {
-                    setTimeout(()=>{
-                        setDisabled(false)
-                        resolve()
-                    }, 600)
-                })
             })
     }
 

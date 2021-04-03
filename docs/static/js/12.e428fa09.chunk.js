@@ -1,0 +1,2 @@
+(this["webpackJsonpnina-chat-app"]=this["webpackJsonpnina-chat-app"]||[]).push([[12],{284:function(n,t,a){"use strict";a.r(t),a.d(t,"default",(function(){return e}));var c=a(0);function e(){return Object(c.jsx)("h1",{children:"UIPageView"})}}}]);
+//# sourceMappingURL=12.e428fa09.chunk.js.map
