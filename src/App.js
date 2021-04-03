@@ -43,9 +43,9 @@ export default function App() {
     function onMenuClick(id) {
         console.log(id)
     }
-
+    console.log(process.env.PUBLIC_URL)
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <div className="client hbox blue">
                 <UIDrawer
                     behavior="desktop"

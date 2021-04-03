@@ -2,7 +2,7 @@ import { useLayoutEffect, useRef } from 'react'
 import UISVGIcon from '../UISvgIcon'
 import './UIButton.css'
 
-export default function UIButton({
+function UIButton({
     children,
     style,
     className='',
@@ -71,3 +71,28 @@ export default function UIButton({
         </button>
     )
 }
+
+// docs(UIButton, {
+//     props: {
+//         color: {
+//             type: String,
+//             default: '',
+//             description: '',
+//             example: ''
+//         }
+//     },
+//     events: {
+//         onClick: {
+//             description: '',
+//             params: {
+//                 value: {
+//                     type: Object,
+//                     description: '',
+//                     example: ''
+//                 }
+//             }
+//         }
+//     }
+// })
+
+export default UIButton
