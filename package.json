@@ -2,7 +2,6 @@
   "name": "nina-chat-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
@@ -16,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "PUBLIC_URL=uire react-scripts build && rm -rf docs/ && mv build/ docs/ && cp 404.html docs/404.html",
+    "build": "react-scripts build && rm -rf docs/ && mv build/ docs/ && cp 404.html docs/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
