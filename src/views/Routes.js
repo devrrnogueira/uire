@@ -79,7 +79,7 @@ export function RouteRender(route) {
                     let arr = window.location.search.replace('?','').split('=')
 
                     if (arr[0]=='path') {
-                        p = arr[1].replaceAll('%2F', '/')
+                        p = arr[1].replaceAll('%2F', '/').replace('/uire/', '')
                         console.log(p)
                         return <Redirect to={p} />
                     }
