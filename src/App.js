@@ -29,7 +29,15 @@ export default function App() {
     const [dark, setDark] = useState(Theme.getDark())
 
     useLayoutEffect(()=>{
-        splash.hide()
+        let arr = window.location.search.replace('?','').split('=')
+
+        if (arr[0]=='path') {
+            window.history.replaceState({}, document.title, window.location.href.split('?')[0])
+            setTimeout(()=>{splash.hide()}, 100)
+        } else {
+            splash.hide()
+        }
+    // eslint-disable-next-line
     }, [])
 
     useEffect(()=>{
@@ -43,7 +51,7 @@ export default function App() {
     function onMenuClick(id) {
         console.log(id)
     }
-    console.log(process.env.PUBLIC_URL)
+    
     return (
         <Router basename={process.env.PUBLIC_URL}>
             <div className="client hbox blue">

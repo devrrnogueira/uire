@@ -7,6 +7,12 @@
     <meta http-equiv="refresh" content="0; URL='https://devrrnogueira.github.io/uire'"/>
 
     <title>UIRE Redirect</title>
+    <script>
+        let origin = location.origin
+        let pathname = location.pathname
+
+        location.href = origin + '/uire?path=' + pathname
+    </script>
 </head>
 <body>
     <h1>/root</h1>

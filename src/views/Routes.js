@@ -1,5 +1,5 @@
 import React, { lazy } from "react"
-import { Route } from "react-router-dom"
+import { Route, Redirect } from "react-router-dom"
 
 export const routes = [
     {
@@ -73,9 +73,17 @@ export function RouteRender(route) {
     return (
         <Route
             path={route.path}
-            render={props => (
-                <route.component {...props} routes={route.routes} />
-            )}
+            render={props => {
+                if (route.path == '/') {
+                    let arr = window.location.search.replace('?','').split('=')
+
+                    if (arr[0]=='path') {
+                        return <Redirect to={arr[1]} />
+                    }
+                }
+
+                return (<route.component {...props} routes={route.routes} />)
+            }}
         />
     )
 }
