@@ -75,11 +75,13 @@ export function RouteRender(route) {
             path={route.path}
             render={props => {
                 if (route.path == '/') {
+                    let p
                     let arr = window.location.search.replace('?','').split('=')
 
                     if (arr[0]=='path') {
-                        console.log(arr[1])
-                        return <Redirect to={arr[1]} />
+                        p = arr[1].replaceAll('%2F', '/')
+                        console.log(p)
+                        return <Redirect to={p} />
                     }
                 }
 
