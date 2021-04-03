@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; URL='https://devrrnogueira.github.io/uire'"/>
+    
+    <!-- <meta http-equiv="refresh" content="0; URL='https://devrrnogueira.github.io/uire'"/> -->
 
     <title>UIRE Redirect</title>
     <script>
         let origin = location.origin
         let pathname = location.pathname
-
-        location.href = origin + '/uire?path=' + pathname
+        let url = origin + '/uire?path=' + pathname
+        
+        console.log(url)
+        location.href = url
     </script>
 </head>
 <body>

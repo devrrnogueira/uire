@@ -78,6 +78,7 @@ export function RouteRender(route) {
                     let arr = window.location.search.replace('?','').split('=')
 
                     if (arr[0]=='path') {
+                        console.log(arr[1])
                         return <Redirect to={arr[1]} />
                     }
                 }

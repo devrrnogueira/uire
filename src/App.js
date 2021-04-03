@@ -29,14 +29,7 @@ export default function App() {
     const [dark, setDark] = useState(Theme.getDark())
 
     useLayoutEffect(()=>{
-        let arr = window.location.search.replace('?','').split('=')
-
-        if (arr[0]=='path') {
-            window.history.replaceState({}, document.title, window.location.href.split('?')[0])
-            setTimeout(()=>{splash.hide()}, 100)
-        } else {
-            splash.hide()
-        }
+        splash.hide()
     // eslint-disable-next-line
     }, [])
 
