@@ -1,0 +1,11 @@
+.ui-tabs {
+    background: var(--ui-color-primary);
+    color: #fff;
+}
+.ui-tab {
+    border-color: var(--ui-color-primary);
+}
+
+.ui-tab.active{
+    border-bottom-color: #fff;
+}

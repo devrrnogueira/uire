@@ -1,0 +1,11 @@
+.select {
+    border: solid 1px;
+    appearance: auto;
+    margin-bottom: 6px;
+    padding: 4px 8px 4px 14px;
+}
+.el-anima {
+    background: #9c27b0;
+    padding: 10px;
+    margin: 5px;
+}

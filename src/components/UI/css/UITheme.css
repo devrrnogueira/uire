@@ -1,0 +1,75 @@
+
+.child-spaced>* {
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font: 14px/18px Tahoma,sans-serif,Arial,Helvetica;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: inherit;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+ 
+.text-weight-bold {
+    font-weight: 700!important;
+}
+
+.scroll {
+    overflow: auto;
+}
+
+.shadow-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2),0 1px 1px rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12)
+}
+.shadow-2 {
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2),0 2px 2px rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12)
+}
+.shadow-3 {
+    box-shadow: 0 1px 8px rgba(0,0,0,0.2),0 3px 4px rgba(0,0,0,0.14),0 3px 3px -2px rgba(0,0,0,0.12)
+}
+.shadow-4 {
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2),0 4px 5px rgba(0,0,0,0.14),0 1px 10px rgba(0,0,0,0.12)
+}
+
+/* css/box.css */
+
+/* UIbox layout */
+.hbox{display:flex; justify-content:flex-start; align-items:stretch; flex-direction:row;}
+.vbox{display:flex; justify-content:flex-start; align-items:stretch; flex-direction:column;}
+.client{display:flex; flex:1;position:relative; height:100%; width:100%;}
+
+[valign="top"], .v-align--top {align-items:flex-start;}
+[valign="bottom"], .v-align--bottom {align-items:flex-end;}
+[valign="center"], .v-align--center {align-items:center;}
+
+[halign="left"], .h-align--left {justify-content:flex-start;}
+[halign="right"], .h-align--right {justify-content:flex-end;}
+[halign="center"], .h-align--center {justify-content:center;}
+
+.vbox[layout="space-around"], .hbox[layout="space-around"] {justify-content:space-around;}
+.vbox[layout="space-between"], .hbox[layout="space-between"]{justify-content:space-between;}
+.vbox[layout="center center"], .hbox[layout="center center"]{justify-content:center; align-items:center;}
+
+.spacer{flex-grow: 1;}
+
+[box-test]{ border: solid 1px red; padding: 2px; }
+
+.container{
+    display: block;
+    overflow-y: auto;
+    padding-bottom:40px;
+}

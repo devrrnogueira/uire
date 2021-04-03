@@ -1,0 +1,15 @@
+.ui-page {
+    position: relative;
+    background-color: var(--f7-page-bg-color);
+}
+
+.ui-page-header {
+    position: absolute;
+    width: 100%;
+    z-index: 18;
+}
+
+.ui-page-content {
+    overflow: auto;
+    display: block;
+}

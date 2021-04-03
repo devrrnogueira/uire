@@ -1,0 +1,63 @@
+/* css/box.css */
+
+/* UIbox layout */
+.hbox{display:flex; justify-content:flex-start; align-items:stretch; flex-direction:row;}
+.vbox{display:flex; justify-content:flex-start; align-items:stretch; flex-direction:column;}
+.client{display:flex; flex:1;position:relative; height:100%; width:100%;}
+
+[valign="top"], .v-align--top {align-items:flex-start;}
+[valign="bottom"], .v-align--bottom {align-items:flex-end;}
+[valign="center"], .v-align--center {align-items:center;}
+
+[halign="left"], .h-align--left {justify-content:flex-start;}
+[halign="right"], .h-align--right {justify-content:flex-end;}
+[halign="center"], .h-align--center {justify-content:center;}
+
+.vbox[layout="space-around"], .hbox[layout="space-around"] {justify-content:space-around;}
+.vbox[layout="space-between"], .hbox[layout="space-between"]{justify-content:space-between;}
+.vbox[layout="center center"], .hbox[layout="center center"]{justify-content:center; align-items:center;}
+
+.spacer{flex-grow: 1;}
+
+[box-test]{ border: solid 1px red; padding: 2px; }
+
+.container{
+    display: block;
+    overflow-y: auto;
+    padding-bottom:40px;
+}
+
+.child-spaced>* {
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+svg {
+    fill: currentColor;
+}
+
+i.icon {
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+i.icon img {
+    width: 100%;
+    height: 100%;
+}
+
+hr {
+    border-color: #f7f7f85e;
+}
+
+.theme-dark hr {
+    border-color: #8080805e;
+}
+
+.bg-transparent {
+    background: transparent!important;
+}

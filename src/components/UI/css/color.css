@@ -1,0 +1,42 @@
+.default {
+    --color-primary   : #027BE3;
+    --color-secondary : #26A69A;
+    --color-accent    : #9C27B0;
+
+    --color-dark      : #1d1d1d;
+
+    --color-positive  : #21BA45;
+    --color-negative  : #C10015;
+    --color-info      : #31CCEC;
+    --color-warning   : #F2C037;
+}
+.default.dark {
+    --color-dark-page : #121212;
+    --color-dark      : #1d1d1d;
+
+    --color-positive  : #21BA45;
+    --color-negative  : #C10015;
+    --color-info      : #31CCEC;
+    --color-warning   : #F2C037;
+}
+.nisidata {
+    --color-primary   : #202e3a;
+    --color-secondary : #556270;
+    --color-accent    : #4ecdc4;
+
+    --color-dark      : #1d1d1d;
+
+    --color-positive  : #c7f464;
+    --color-negative  : #ff6b6b;
+    --color-info      : #20c0df;
+    --color-warning   : #F2C037;
+}
+.nisidata.dark {
+    --color-dark-page : #121212;
+    --color-dark      : #1d1d1d;
+
+    --color-positive  : #c7f464;
+    --color-negative  : #ff6b6b;
+    --color-info      : #20c0df;
+    --color-warning   : #F2C037;
+}

@@ -1,0 +1,42 @@
+
+.ui-drawer-overlay {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--f7-panel-backdrop-bg-color);
+}
+
+.ui-drawer {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-right: solid 1px var(--f7-navbar-border-color,var(--f7-bars-border-color));
+    /* border-right: 1px solid rgba(0,0,0,0.12); */
+    width: 280px;
+    overflow-y: auto;
+    /* background-color: var(--f7-panel-bg-color); */
+    background-color: var(--f7-page-bg-color);
+}
+
+.ui-drawer-shadow {
+    box-shadow: 0 0 10px 2px rgb(0 0 0 / 20%), 0 0px 10px rgb(0 0 0 / 24%);
+}
+
+.ui-drawer-right {
+    left: initial;
+    right: 0;
+}
+
+/* effects */
+.fade-enter .ui-drawer-content{
+    transform: translate3d(-100%, 0, 0);
+}
+.fade-enter-active .ui-drawer-content{
+    transition: transform .2s;
+    transform: translate3d(0, 0, 0);
+}
+.fade-exit .ui-drawer-content{
+    transition: transform .2s;
+    transform: translate3d(-100%, 0, 0);
+}

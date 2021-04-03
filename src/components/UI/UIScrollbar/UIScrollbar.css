@@ -1,0 +1,17 @@
+
+.ui-scrollbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 8px;
+    background: #565d7340;
+}
+
+.ui-scrollbar-slider {
+    position: absolute;
+    width: 100%;
+    background: #565d738c;
+    border-radius: 4px;
+}

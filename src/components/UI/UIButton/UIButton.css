@@ -1,0 +1,101 @@
+.button {
+    width: auto;
+    display: inline-flex;
+}
+
+.button-fab {
+    position: relative;
+    display: inline-flex;
+    background-color: var(--f7-fab-bg-color,var(--f7-theme-color));
+    width: var(--f7-fab-size);
+    height: var(--f7-fab-size);
+    box-shadow: var(--f7-fab-box-shadow);
+    border-radius: calc(var(--f7-fab-size)/ 2);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--f7-fab-text-color);
+}
+
+[shadow] {
+    box-shadow: 0 1px 5px rgb(0 0 0 / 20%), 0 2px 2px rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%);
+}
+
+.button-text {
+    display: flex;
+    align-items: center;
+    padding: 4px 16px;
+}
+
+.button-icon {
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    overflow: hidden;
+}
+
+.button-icon-align-left .button-icon {
+    margin-left: 8px;
+}
+
+.button-icon-align-right {
+    flex-direction: row-reverse;
+}
+.button-icon-align-right .button-icon {
+    margin-right: 8px;
+}
+
+.button-icon-align-top{
+    flex-direction: column;
+}
+.button-icon-align-top .button-icon {
+    margin-top: 2px;
+}
+
+.button-rounded {
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.button-rounded .button-icon {
+    margin: 0;
+}
+
+.button-rounded.button-shadow {
+    box-shadow: 0 1px 2px rgba(0,0,0,.17),0 6px 8px rgba(0,0,0,.29);
+}
+
+.button::before {
+    background: transparent;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .4s;
+    opacity: .03;
+}
+.button:hover::before {
+    background: var(--f7-theme-color);
+}
+
+.button:active::before {
+    background: var(--f7-theme-color);
+    opacity: .1;
+}
+
+.button-fill:hover::before, .button-fab:hover::before {
+    background: #000;
+    opacity: .2;
+}
+.button-fill:active::before, .button-fab:active::before {
+    background: #000;
+    opacity: .4;
+}
+
+.button-icon-align-top {
+    height: auto;
+    padding-top: 8px;
+}

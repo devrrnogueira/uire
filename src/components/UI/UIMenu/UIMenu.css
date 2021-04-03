@@ -1,0 +1,49 @@
+.ui-menu-overlay {
+    position: fixed;
+    background: transparent;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 19;
+}
+.ui-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--f7-elevation-2);
+    background: var(--f7-card-bg-color);
+    overflow: hidden;
+    min-width: 150px;
+    z-index: 20;
+}
+.ui-menu .list {
+    margin: 0;
+}
+.ui-menu .item-link {
+    padding-left: 0;
+}
+.ui-menu .item-inner {
+    padding-left: 16px;
+}
+
+.md .ui-menu {
+    border-radius: 0;
+}
+
+.ui-menu-transparent {
+    box-shadow: none;
+    background: transparent;
+}
+.ui-float-button-show-prepare {
+    opacity: 0;
+}
+.ui-float-button-show-active {
+    transition: opacity .4s;
+    opacity: 1;
+}
+
+.ui-float-button-hide-active {
+    transition: opacity .4s;
+    opacity: 0;
+}

@@ -1,0 +1,25 @@
+.app {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.route-link{
+    padding: 10px 23px;
+    margin: 0;
+}
+
+.app-top-menu .ui-radio {
+    margin-left: 28px;
+}
+
+@media only screen and (min-width: 700px) {
+    .app-container {
+        padding: 10px;
+    }
+    .app {
+        max-width: 650px;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 17%), 0 6px 8px rgb(0 0 0 / 29%);
+        border-radius: 4px;
+    }
+}

@@ -1,0 +1,20 @@
+.ui-radio {
+    cursor: pointer;
+    height: 20px;
+}
+.ui-radio input {
+    display: none;
+}
+.ui-radio svg{
+    width: 20px;
+    height: 20px;
+}
+.ui-radio [check]{
+    opacity: 0;
+}
+.ui-radio-checked svg {
+    color: var(--f7-radio-active-color,var(--f7-theme-color));
+}
+.ui-radio-checked [check]{
+    opacity: 1;
+}

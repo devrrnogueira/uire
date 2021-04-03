@@ -1,0 +1,119 @@
+.ui-tabs {
+    position: relative;
+    justify-content: center;
+    background-color: var(--f7-toolbar-bg-color,var(--f7-bars-bg-color));
+    color: var(--f7-toolbar-text-color,var(--f7-bars-text-color));
+    font-size: var(--f7-toolbar-font-size);
+}
+.md .ui-tabs {
+    height: auto;
+}
+.ui-tabs-panels {
+    padding: 16px;
+}
+.ui-tabs-align-justify .ui-tab {
+    flex: 1
+}
+
+.ui-tab {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    /* height: 100%;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase; */
+    align-items:center;
+    justify-content:center;
+    /* border: solid 2px transparent;
+    padding: 10px 16px 10px 16px; */
+    /* margin: 0 6px;
+    font-weight: 500; */
+
+    padding: 10px 20px;
+    height: 100%;
+    /* width: 100%; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: var(--f7-tabbar-link-text-transform);
+    font-weight: var(--f7-tabbar-link-font-weight);
+    letter-spacing: var(--f7-tabbar-link-letter-spacing);
+    overflow: hidden;
+    transition: color .2s;
+}
+
+.ui-tab-active {
+    color: var(--f7-tabbar-link-active-color,var(--f7-theme-color));
+    background-color: var(--f7-tabbar-link-active-bg-color,transparent);
+}
+
+.ui-tab-icon {
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    overflow: hidden;
+    /* fill: #fff; */
+}
+
+.ui-tab-indicator {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    background-color: var(--f7-tabbar-link-active-color,var(--f7-theme-color));
+    transition: all .2s;
+    display: none;
+}
+
+.md .ui-tab-indicator {
+    display: block;
+}
+
+.ui-tab:hover::before {
+    transition: background 1s;
+    background: #bfbfbf54;
+}
+
+.ui-tab:active::before {
+    background: #7d7d7d4d;
+}
+
+.ui-tab-text {
+    display: flex;
+    align-items: center;
+    min-height: 24px;
+}
+
+.ui-tab-icon-align-top {
+    flex-direction: column;
+}
+.ui-tab-icon-align-top .ui-tab-text {
+    margin-top: 8px;
+}
+
+.ui-tab-icon-align-left .ui-tab-text {
+    margin-left: 8px;
+}
+
+.ui-tab-icon-align-right {
+    flex-direction: row-reverse;
+}
+.ui-tab-icon-align-right .ui-tab-text {
+    margin-right: 8px;
+}
+
+.ui-tab-panels {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.ui-tab-panel {
+    display: none;
+    width: 100%;
+    white-space: normal;
+}
+.ui-tab-panel-active {
+    display: inline-block;
+}

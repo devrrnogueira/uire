@@ -1,0 +1,127 @@
+.links-list a {
+    padding-left: 0;
+}
+.item-content {
+    width: 100%;
+}
+.item-without-icon{
+    padding-left: 0!important;
+}
+.item-without-icon .item-inner{
+    margin-left: 0!important;
+    padding-left: calc(var(--f7-list-item-padding-horizontal) + var(--f7-safe-area-left));
+}
+
+a.item-link::before {
+    background: transparent;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .4s;
+    opacity: .03;
+}
+a.item-link:hover::before {
+    background: var(--f7-theme-color);
+}
+a.item-link:active::before {
+    background: var(--f7-theme-color);
+    opacity: .1;
+}
+.item-arrow-2 {
+    padding-right: 18px!important;
+}
+.item-arrow-2::before {
+    display: none!important;
+}
+
+.item-active {
+    background: var(--f7-theme-color);
+    color: var(--f7-button-fill-text-color, #fff)!important;
+}
+
+.ui-list {
+    padding: 8px 0;
+    border: solid 1px rgba(0,0,0,0.12);;
+}
+
+.ui-list-item {
+    min-height: 48px;
+    padding: 6px 16px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.ui-list-item-avatar {
+    padding-right: 16px;
+    min-width: 56px;
+}
+.ui-list-item-avatar img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.ui-list-item-avatar i{
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.ui-list-item-main {
+    flex: 1;
+}
+
+.ui-list-item-caption {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1rem;
+    letter-spacing: 0.16667em;
+}
+
+.ui-list-item-label {
+    margin-top: 4px;
+    line-height: 1.2em!important;
+}
+
+.ui-list-item-description {
+    margin-top: 4px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    letter-spacing: 0.03333em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.ui-list-item-side {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+.ui-list-item-side-top {
+    font-size: 0.75rem;
+}
+.ui-list-item-side-icon {
+    text-align: right;
+}
+
+.ui-list-separator {
+    border: 0;
+    margin: 0;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    display: block;
+    height: 1px;
+    background: rgba(0,0,0,0.12);
+}
+
+.ui-list-separator-inset{
+    margin-left: 72px;
+}

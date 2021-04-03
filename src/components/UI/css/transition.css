@@ -1,0 +1,99 @@
+
+/* fade-in */
+.fade-in-enter {
+    opacity: 0;
+}
+.fade-in-active {
+    transition: opacity 3s;
+    opacity: 1;
+}
+
+/* fade-out */
+.fade-out-active {
+    transition: opacity .3s;
+    opacity: 0;
+}
+
+/* slide-left */
+.slide-left {
+    transition: transform .2s;
+    transform: translate3d(-100%, 0, 0);
+}
+
+/* slide-right */
+.slide-right {
+    transition: transform .2s;
+    transform: translate3d(100%, 0, 0);
+}
+
+/* slide-top */
+.slide-top {
+    transition: transform .2s;
+    transform: translate3d(0, -100%, 0);
+}
+
+/* slide-bottom */
+.slide-bottom {
+    transition: transform .2s;
+    transform: translate3d(0, 100%, 0);
+}
+
+/* menu-left-bottom */
+.menu-left-bottom-enter {
+    opacity: 0;
+    transform-origin: left top;
+    transform: scale(.1);
+}
+.menu-left-bottom-active {
+    transition: all .2s;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* menu-left-top */
+.menu-left-top-enter {
+    opacity: 0;
+    transform-origin: left bottom;
+    transform: scale(.1);
+}
+.menu-left-top-active {
+    transition: all .2s;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* menu-right-bottom */
+.menu-right-bottom-enter {
+    opacity: 0;
+    transform-origin: right top;
+    transform: scale(.1);
+}
+.menu-right-bottom-active {
+    transition: all .2s;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* menu-right-top */
+.menu-right-top-enter {
+    opacity: 0;
+    transform-origin: right bottom;
+    transform: scale(.1);
+}
+.menu-right-top-active {
+    transition: all .2s;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* menu-center-top */
+.menu-center-top-enter {
+    opacity: 0;
+    transform-origin: center bottom;
+    transform: scale(.1);
+}
+.menu-center-top-active {
+    transition: all .2s;
+    opacity: 1;
+    transform: scale(1);
+}
