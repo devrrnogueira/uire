@@ -1,2 +1,0 @@
-(this["webpackJsonpnina-chat-app"]=this["webpackJsonpnina-chat-app"]||[]).push([[14],{282:function(n,c,e){"use strict";e.r(c),e.d(c,"default",(function(){return a}));var t=e(0);function a(){return Object(t.jsx)("div",{className:"client vbox v-align--center",children:Object(t.jsx)("h1",{children:"Wellcome UIReact"})})}}}]);
-//# sourceMappingURL=14.f5db98e4.chunk.js.map
