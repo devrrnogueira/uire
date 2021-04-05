@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef } from "react"
 import { createPortal } from "react-dom"
-import csstransition from 'css-transition-rule'
 
+import csstransition from '../../util/csstransition'
 import DOM from '../../util/dom'
 
 import './UIMenu.css'

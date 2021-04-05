@@ -1,0 +1,2 @@
+(this.webpackJsonpsite=this.webpackJsonpsite||[]).push([[13],{272:function(t,e,n){"use strict";n.r(e),n.d(e,"default",(function(){return s}));var i=n(0);function s(){return Object(i.jsx)("h1",{children:"UIPageView"})}}}]);
+//# sourceMappingURL=13.551b7ef2.chunk.js.map

@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
-import csstransition from 'css-transition-rule'
 
+import csstransition from '../../util/csstransition'
 import ResizeCapture from "../../util/resizecapture"
 
 import './UIDrawer.css'

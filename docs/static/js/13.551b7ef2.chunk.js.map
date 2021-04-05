@@ -1,0 +1,1 @@
+{"version":3,"sources":["views/ComponentsView/UIPageView/index.js"],"names":["UIPageView"],"mappings":"yJACe,SAASA,IACpB,OAAO","file":"static/js/13.551b7ef2.chunk.js","sourcesContent":["\nexport default function UIPageView() {\n    return <h1>UIPageView</h1>\n}"],"sourceRoot":""}

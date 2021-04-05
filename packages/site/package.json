@@ -11,10 +11,7 @@
     },
     "scripts": {
         "start": "craco start",
-        "build-old": "react-scripts build",
-        "build": "PUBLIC_URL=/uire react-scripts build && rm -rf docs/ && mv build/ docs/ && cp 404.html docs/404.html",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "build": "PUBLIC_URL=/uire craco build && rm -rf ../../docs/ && mv build/ ../../docs && cp 404.html ../../docs/404.html"
     },
     "eslintConfig": {
         "extends": [

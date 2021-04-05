@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "site": "npm start --workspace=site"
+        "dev-site": "npm start --workspace=site",
+        "build-site": "npm run build --workspace=site"
     },
     "author": "",
     "license": "ISC",

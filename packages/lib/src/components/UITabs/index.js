@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef, useState } from 'react'
-import csstransition from "css-transition-rule"
 
+import csstransition from "../../util/csstransition"
 import ResizeObserver from "../../util/resizecapture"
 import UISVGIcon from '../UISvgIcon'
 

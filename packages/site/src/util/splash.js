@@ -1,6 +1,6 @@
 // @ts-check
 
-import csstransition from 'css-transition-rule'
+import csstransition from 'lib/src/util/csstransition'
 
 let div
 

@@ -1,7 +1,8 @@
 import { useLayoutEffect, useRef, useState } from "react"
 
+import csstransition from "lib/src/util/csstransition"
+
 import './TransitionView.css'
-import csstransition from "css-transition-rule"
 
 const animations = [
     {
